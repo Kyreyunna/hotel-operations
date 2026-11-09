@@ -51,7 +51,7 @@ private boolean weekend;
         return price;
     }
     public double getReservationTotal(){
-        int numberOfNights=0;
+        int numberOfNights=3;
         double price = 1000;
         if(roomType.equals("king")){
             price = 139.00 * numberOfNights;
