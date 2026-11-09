@@ -44,10 +44,23 @@ private boolean weekend;
         } else if (roomType.equals("double")) {
             price = 124.00;
         }
-
         //and 10% more when weekend is true
         if (weekend) {
             price = price * 1.10;
+        }
+        return price;
+    }
+    public double getReservationTotal(){
+        int numberOfNights=0;
+        double price = 1000;
+        if(roomType.equals("king")){
+            price = 139.00 * numberOfNights;
+        } else if (roomType.equals("double")) {
+            price = 124.00 * numberOfNights;
+        }
+        //and 10% more when weekend is true
+        if (weekend) {
+            price = price * 1.10 * numberOfNights;
         }
         return price;
     }
