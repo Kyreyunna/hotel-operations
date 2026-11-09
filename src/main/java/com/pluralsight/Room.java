@@ -28,4 +28,17 @@ public class Room {
     public boolean isDirty() {
         return dirty;
     }
+
+    public boolean isAvailable() {
+//        boolean isAvailable =
+
+        if (this.occupied == false) {
+            return true;
+        }
+        if (this.dirty == false) {
+            return true;
+        } else
+            return false;
+
+    }
 }
