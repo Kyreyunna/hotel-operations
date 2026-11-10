@@ -9,8 +9,8 @@ public class App {
         System.out.printf("%8s","Total: $");
         System.out.println(reservation.getReservationTotal());
 
-//        Employee employee = new Employee();
-
+        Employee employee = new Employee(40, 25.00, "J-10", "Jessica", "Clerk");
+        System.out.println(employee.getRegularHours());
 //      Reservation reservation = new Reservation("king", 3, true);
 //      System.out.println(reservation.getPrice());
 

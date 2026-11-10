@@ -37,9 +37,10 @@ public class Employee {
     public String getDepartment() {
         return department;
     }
-    public double getTotalPay(){
+    public double getRegularHours(){
         double totalPay = hoursWorked * payRate;
-        double hoursWorked=0;
+        double hoursWorked = 0;
+        double payRate= 0;
         return totalPay;
     }
 }
