@@ -9,5 +9,9 @@ public class App {
 
         Reservation reservation = new Reservation("king", 3, true);
         System.out.println(reservation.getReservationTotal());
+
+//        Reservation reservation = new Reservation("king", 3, true);
+//        System.out.println(reservation.getPrice());
+
     }
 }
