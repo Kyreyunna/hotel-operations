@@ -12,7 +12,10 @@ public class App {
 //        Employee employee = new Employee(40, 25.00, "J-10", "Jessica", "Clerk");
 //        System.out.println(employee.getRegularHours());
 
-        Employee employee = new Employee(40, 25.00, "J-10", "Jessica", "Clerk");
+//        Employee employee = new Employee(20, 20.00, "J-10", "Jessica", "Clerk");
+//        System.out.println(employee.getTotalPay());
+
+        Employee employee = new Employee(45, 20.00, "J-10", "Jessica", "Clerk");
         System.out.println(employee.getTotalPay());
 
 //      Reservation reservation = new Reservation("king", 3, true);

@@ -39,27 +39,37 @@ public class Employee {
     }
 
     public double getRegularHours() {
-        double totalPay = hoursWorked * payRate;
-        double hoursWorked = 0;
+        double totalPay = 0;
         double payRate = 0;
+        if (hoursWorked<= 40) {
+            totalPay = hoursWorked * payRate;
+        }
         return totalPay;
     }
 
     public double getOvertimeHours() {
-        return getOvertimeHours();
+        double totalPay = 0;
+        double payRate = 0;
+        if (hoursWorked > 40) {
+            totalPay = hoursWorked * payRate * 1.50;
+        }
+
+
+        return totalPay;
     }
 
     public double getTotalPay(){
         double totalPay = 0;
+        double regularPay=0;
+        double overTimePay=0;
+        double payRate=0;
         if (hoursWorked > 40) {
-        totalPay = hoursWorked * payRate * 1.50;
+        overTimePay = hoursWorked * payRate * 1.50;
         }
         if (hoursWorked<= 40) {
-            totalPay = hoursWorked * payRate;
+            regularPay = hoursWorked * payRate;
         }
-
-
-
+        double totalPay = regularPay*payRate;
         return totalPay;
     }
 }
