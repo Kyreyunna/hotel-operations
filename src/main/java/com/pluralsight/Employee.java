@@ -43,4 +43,12 @@ public class Employee {
         double payRate= 0;
         return totalPay;
     }
+    public double getOvertimeHours(){
+        if(hoursWorked>40){
+            double overTimePay = hoursWorked * payRate * 1.50;
+            return overTimePay;
+        }
+        double overTimePay=0;
+        return overTimePay;
+    }
 }
