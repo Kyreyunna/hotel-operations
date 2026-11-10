@@ -6,10 +6,13 @@ public class App {
         System.out.println(room.isAvailable());
 
         Reservation reservation = new Reservation("king", 3, true);
+        System.out.printf("%8s","Total: $");
         System.out.println(reservation.getReservationTotal());
 
-//        Reservation reservation = new Reservation("king", 3, true);
-//        System.out.println(reservation.getPrice());
+
+
+//      Reservation reservation = new Reservation("king", 3, true);
+//      System.out.println(reservation.getPrice());
 
     }
 }

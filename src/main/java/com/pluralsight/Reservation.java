@@ -54,7 +54,7 @@ public class Reservation {
 
     public double getReservationTotal() {
         double price=0;
-        double total = price * numberOfNights;
+
         if (roomType.equals("king")) {
             price = 139.00;
         } else if (roomType.equals("double")) {
@@ -63,6 +63,7 @@ public class Reservation {
         if (weekend) {
             price = price * 1.10;
         }
+        double total = price * numberOfNights;
         return total;
     }
 }
