@@ -13,6 +13,11 @@ public class Room {
         this.dirty = dirty;
     }
 
+    public Room(Boolean occupied, Boolean dirty) {
+        this.dirty=dirty;
+        this.occupied=occupied;
+    }
+
     public int getNumberOfBeds() {
         return numberOfBeds;
     }

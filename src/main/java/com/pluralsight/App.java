@@ -18,6 +18,21 @@ public class App {
         Employee employee = new Employee(45, 20.00, "J-10", "Jessica", "Clerk");
         System.out.println(employee.getTotalPay());
 
+        Boolean occupied= true;
+        Boolean dirty = true;
+
+        Room room1;
+        room1 = new Room(occupied,dirty);
+        //print isAvailable() at each step:
+        //true at the start
+        System.out.println();
+        // false after check in
+        //false after check out
+        //true after cleaning
+
+
+
+
 //      Reservation reservation = new Reservation("king", 3, true);
 //      System.out.println(reservation.getPrice());
 
