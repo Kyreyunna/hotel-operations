@@ -69,7 +69,7 @@ public class Employee {
         if (hoursWorked<= 40) {
             regularPay = hoursWorked * payRate;
         }
-        double totalPay = regularPay*payRate;
+//        double totalPay = regularPay*payRate;
         return totalPay;
     }
 }
