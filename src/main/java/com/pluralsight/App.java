@@ -6,7 +6,7 @@ public class App {
         System.out.println(room.isAvailable());
 
         Reservation reservation = new Reservation("king", 3, true);
-        System.out.printf("%8s","Total: $");
+        System.out.printf("%6s","Reservation Total: $");
         System.out.println(reservation.getReservationTotal());
 
         Employee employee1 = new Employee(40, 25.00, "J-10", "Jessica", "Clerk");
@@ -18,20 +18,23 @@ public class App {
         Employee employee3 = new Employee(45, 20.00, "J-10", "Jessica", "Clerk");
         System.out.println(employee3.getTotalPay());
 
-        Boolean occupied= true;
-        Boolean dirty = true;
+
 
         Room room1;
-        room1 = new Room(occupied,dirty);
+        room1 = new Room(false,false);
         //print isAvailable() at each step:
         //true at the start
         System.out.println(room1.isAvailable());
+
         // false after check in
-        System.out.println(room1.getCheckIn());
+        room1.checkIn();
+        System.out.println(room1.isAvailable());
         //false after check out
-        System.out.println(room1.getCheckOut());
+        room1.checkOut();
+        System.out.println(room1.isAvailable());
         //true after cleaning
-        System.out.println(room1.getCleanRoom());
+        room1.cleanRoom();
+        System.out.println(room1.isAvailable());
 
 
 

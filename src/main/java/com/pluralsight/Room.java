@@ -14,8 +14,8 @@ public class Room {
     }
 
     public Room(Boolean occupied, Boolean dirty) {
-        this.dirty=dirty;
-        this.occupied=occupied;
+        this.dirty = dirty;
+        this.occupied = occupied;
     }
 
     public int getNumberOfBeds() {
@@ -35,30 +35,19 @@ public class Room {
     }
 
     public boolean isAvailable() {
-//        boolean isAvailable =
-
-        if (!this.occupied) {
-            return true;
-        }
-        if (!this.dirty) {
-            return true;
-        } else
-            return false;
-
+        return !occupied && !dirty;
     }
-    public boolean getCheckIn(){
-        this.occupied= true;
-        this.dirty=true;
 
-        return dirty;
+    public void checkIn() {
+        this.occupied = true;
+        this.dirty = true;
     }
-    public boolean getCheckOut(){
-        this.occupied=false;
 
-        return occupied;
+    public void checkOut() {
+        this.occupied = false;
     }
-    public boolean getCleanRoom(){
-        this.dirty=false;
-        return this.occupied;
+
+    public void cleanRoom() {
+        this.dirty = false;
     }
 }
