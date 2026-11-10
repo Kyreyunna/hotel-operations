@@ -37,18 +37,29 @@ public class Employee {
     public String getDepartment() {
         return department;
     }
-    public double getRegularHours(){
+
+    public double getRegularHours() {
         double totalPay = hoursWorked * payRate;
         double hoursWorked = 0;
-        double payRate= 0;
+        double payRate = 0;
         return totalPay;
     }
-    public double getOvertimeHours(){
-        if(hoursWorked>40){
-            double overTimePay = hoursWorked * payRate * 1.50;
-            return overTimePay;
+
+    public double getOvertimeHours() {
+        return getOvertimeHours();
+    }
+
+    public double getTotalPay(){
+        double totalPay = 0;
+        if (hoursWorked > 40) {
+        totalPay = hoursWorked * payRate * 1.50;
         }
-        double overTimePay=0;
-        return overTimePay;
+        if (hoursWorked<= 40) {
+            totalPay = hoursWorked * payRate;
+        }
+
+
+
+        return totalPay;
     }
 }

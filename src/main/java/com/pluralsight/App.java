@@ -13,7 +13,7 @@ public class App {
 //        System.out.println(employee.getRegularHours());
 
         Employee employee = new Employee(40, 25.00, "J-10", "Jessica", "Clerk");
-        System.out.println(employee.getOvertimeHours());
+        System.out.println(employee.getTotalPay());
 
 //      Reservation reservation = new Reservation("king", 3, true);
 //      System.out.println(reservation.getPrice());
