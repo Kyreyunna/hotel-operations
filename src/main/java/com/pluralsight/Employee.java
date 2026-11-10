@@ -76,6 +76,7 @@ public class Employee {
         return punchIn;
     }
     public int punchOut(int time){
+//        Employee: punchOut(int time) adds time - startTime to hoursWorked. Times are whole hours on a 24-hour clock, in the same day, so 14 is 2:00 pm. There's nothing to check first.
         int punchout = (int) (hoursWorked + (time - startTime));
         return punchout;
     }
