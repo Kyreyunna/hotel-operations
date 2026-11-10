@@ -1,7 +1,5 @@
 package com.pluralsight;
 
-import java.util.Arrays;
-
 public class App {
     public static void main(String[] args) {
         Room room = new Room(2, 124.00, false, false);
