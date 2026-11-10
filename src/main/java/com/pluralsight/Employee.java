@@ -17,6 +17,10 @@ public class Employee {
         this.department = department;
     }
 
+    public Employee(double startTime, double hoursWorked) {
+        this.startTime = startTime;
+        this.hoursWorked = hoursWorked;
+    }
     //getter for each field
 
     public double getHoursWorked() {
@@ -61,5 +65,17 @@ public class Employee {
 
         double totalPay = regularPay + overTimePay;
         return totalPay;
+    }
+    public int punchIn(int time){
+        int punchOut = 0;
+        int punchIn = (int)startTime;
+        int hoursWorked= punchOut-punchIn;
+        int startTime=time;
+
+        return punchIn;
+    }
+    public int punchOut(int time){
+        int punchOut = (int) (hoursWorked + (time-startTime));
+        return punchOut;
     }
 }

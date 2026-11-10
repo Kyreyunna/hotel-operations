@@ -18,8 +18,6 @@ public class App {
         Employee employee3 = new Employee(45, 20.00, "J-10", "Jessica", "Clerk");
         System.out.println(employee3.getTotalPay());
 
-
-
         Room room1;
         room1 = new Room(false,false);
         //print isAvailable() at each step:
@@ -36,11 +34,11 @@ public class App {
         room1.cleanRoom();
         System.out.println(room1.isAvailable());
 
-
-
-
 //      Reservation reservation = new Reservation("king", 3, true);
 //      System.out.println(reservation.getPrice());
 
+        //In main, punch in at 10 and out at 14. hoursWorked goes up by 4
+        Employee employee5 = new Employee(45, 20.00, "J-10", "Jessica", "Clerk");
+        System.out.println(employee5.getTotalPay());
     }
 }
