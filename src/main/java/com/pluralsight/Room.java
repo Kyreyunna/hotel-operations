@@ -46,18 +46,18 @@ public class Room {
             return false;
 
     }
-    public boolean setCheckIn(boolean dirty){
+    public boolean getCheckIn(){
         this.occupied= true;
         this.dirty=true;
 
         return dirty;
     }
-    public boolean setCheckOut(boolean occupied){
+    public boolean getCheckOut(){
         this.occupied=false;
 
         return occupied;
     }
-    public boolean getCleanRoom(boolean occupied){
+    public boolean getCleanRoom(){
         this.dirty=false;
         return this.occupied;
     }

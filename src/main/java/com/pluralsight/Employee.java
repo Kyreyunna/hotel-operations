@@ -1,6 +1,7 @@
 package com.pluralsight;
 
 public class Employee {
+    private double startTime;
     private double hoursWorked;
     private double payRate;
     private String employeeId;
@@ -39,37 +40,26 @@ public class Employee {
     }
 
     public double getRegularHours() {
-        double totalPay = 0;
-        double payRate = 0;
-        if (hoursWorked<= 40) {
-            totalPay = hoursWorked * payRate;
+        if (hoursWorked <= 40) {
+            return hoursWorked;
+        }else {
+            return 40;
         }
-        return totalPay;
     }
 
     public double getOvertimeHours() {
-        double totalPay = 0;
-        double payRate = 0;
         if (hoursWorked > 40) {
-            totalPay = hoursWorked * payRate * 1.50;
+           return hoursWorked - 40;
+        }else {
+            return 0;
         }
-
-
-        return totalPay;
     }
 
     public double getTotalPay(){
-        double totalPay = 0;
-        double regularPay=0;
-        double overTimePay=0;
-        double payRate=0;
-        if (hoursWorked > 40) {
-        overTimePay = hoursWorked * payRate * 1.50;
-        }
-        if (hoursWorked<= 40) {
-            regularPay = hoursWorked * payRate;
-        }
-//        double totalPay = regularPay*payRate;
+        double regularPay= getRegularHours() *  payRate;
+        double overTimePay= getOvertimeHours() * (payRate * 1.5);
+
+        double totalPay = regularPay + overTimePay;
         return totalPay;
     }
 }

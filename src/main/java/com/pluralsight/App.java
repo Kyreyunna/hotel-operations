@@ -9,14 +9,14 @@ public class App {
         System.out.printf("%8s","Total: $");
         System.out.println(reservation.getReservationTotal());
 
-//        Employee employee = new Employee(40, 25.00, "J-10", "Jessica", "Clerk");
-//        System.out.println(employee.getRegularHours());
+        Employee employee1 = new Employee(40, 25.00, "J-10", "Jessica", "Clerk");
+        System.out.println(employee1.getRegularHours());
 
-//        Employee employee = new Employee(20, 20.00, "J-10", "Jessica", "Clerk");
-//        System.out.println(employee.getTotalPay());
+        Employee employee2 = new Employee(20, 20.00, "J-10", "Jessica", "Clerk");
+        System.out.println(employee2.getTotalPay());
 
-        Employee employee = new Employee(45, 20.00, "J-10", "Jessica", "Clerk");
-        System.out.println(employee.getTotalPay());
+        Employee employee3 = new Employee(45, 20.00, "J-10", "Jessica", "Clerk");
+        System.out.println(employee3.getTotalPay());
 
         Boolean occupied= true;
         Boolean dirty = true;
@@ -25,10 +25,13 @@ public class App {
         room1 = new Room(occupied,dirty);
         //print isAvailable() at each step:
         //true at the start
-        System.out.println();
+        System.out.println(room1.isAvailable());
         // false after check in
+        System.out.println(room1.getCheckIn());
         //false after check out
+        System.out.println(room1.getCheckOut());
         //true after cleaning
+        System.out.println(room1.getCleanRoom());
 
 
 
