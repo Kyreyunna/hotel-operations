@@ -26,8 +26,16 @@ public class App {
         Employee employee4;
         employee4 = new Employee(0);
         employee4.punchIn(10);
-        employee4.punchOut(15);
+        employee4.punchOut(14);
         System.out.println(employee4.getHoursWorked());
+
+
+        //local time/date instead of int time
+        Employee employee5;
+        employee5 = new Employee(0);
+        employee5.punchIn();
+        employee5.punchOut();
+        System.out.println("no parameters " + employee5.getHoursWorked());
 
         Room room1;
         room1 = new Room(false,false);

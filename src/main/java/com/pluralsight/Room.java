@@ -38,6 +38,7 @@ public class Room {
         return !occupied && !dirty;
     }
 
+
     public void checkIn() {
         this.occupied = true;
         this.dirty = true;
