@@ -25,9 +25,10 @@ public class App {
 //      10 and out at 14. hoursWorked goes up by 4
         Employee employee4;
         employee4 = new Employee(0);
-        System.out.println(employee4.punchIn(10));
-        employee4.getHoursWorked();
-        System.out.println(employee4.punchOut(14));
+        employee4.punchIn(10);
+        employee4.punchOut(14);
+
+        System.out.println(employee4.getHoursWorked());
 
 
         Room room1;
