@@ -1,5 +1,7 @@
 package com.pluralsight;
 
+import java.time.LocalTime;
+
 public class Employee {
     private double startTime;
     private double hoursWorked;
@@ -73,8 +75,9 @@ public class Employee {
         return totalPay;
     }
     public int punchIn(int time){
-    int punchIn = (int) startTime;
-    return punchIn;
+        startTime=time;
+        int punchIn = (int) startTime;
+        return punchIn;
     }
     public int punchOut(int time){
         int punchout = (int) ((int) hoursWorked + startTime);

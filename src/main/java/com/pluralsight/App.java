@@ -1,6 +1,7 @@
 package com.pluralsight;
 
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 
 public class App {
     public static void main(String[] args) {
@@ -20,8 +21,12 @@ public class App {
         Employee employee3 = new Employee(45, 20.00, "J-10", "Jessica", "Clerk");
         System.out.println(employee3.getTotalPay());
 
-        //put local time
-        //check punch in and punch out hours worked btwn
+
+
+        Employee employee5;
+
+
+
 
         Room room1;
         room1 = new Room(false,false);
