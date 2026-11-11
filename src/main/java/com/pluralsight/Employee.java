@@ -108,5 +108,6 @@ public class Employee {
         double time = 0;
         hoursWorked=time-startTime;
         int punchOut = (int) (hoursWorked+startTime);
-        return punchOut;    }
+        return punchOut;
+    }
 }
