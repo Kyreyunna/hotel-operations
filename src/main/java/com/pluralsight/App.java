@@ -26,10 +26,8 @@ public class App {
         Employee employee4;
         employee4 = new Employee(0);
         employee4.punchIn(10);
-        employee4.punchOut(14);
-
+        employee4.punchOut(15);
         System.out.println(employee4.getHoursWorked());
-
 
         Room room1;
         room1 = new Room(false,false);
