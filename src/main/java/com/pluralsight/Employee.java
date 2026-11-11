@@ -18,11 +18,16 @@ public class Employee {
         this.name = name;
         this.department = department;
     }
-//    do not put startTime in constructor
 
     public Employee(double hoursWorked) {
-        this.hoursWorked = hoursWorked;
+        this.hoursWorked= hoursWorked;
+
     }
+//    do not put startTime in constructor
+
+//    public Employee(double hoursWorked) {
+//        this.hoursWorked = hoursWorked;
+//    }
 
 //    public Employee(double startTime, double hoursWorked) {
 //        this.startTime= startTime;
@@ -80,9 +85,15 @@ public class Employee {
         return punchIn;
     }
     public int punchOut(int time){
-        int punchout = (int) ((int) hoursWorked + startTime);
-        int hoursWorked;
-        double startTime;
-        return punchout;
+//      Employee: punchOut(int time) adds time - startTime to
+//      hoursWorked. Times are whole hours on a 24-hour clock
+//      , in the same day, so 14 is 2:00 pm. There's nothing to check first.
+//        startTime=time;
+//        int punchOut = (int) ((int) hoursWorked + startTime);
+//        int hoursWorked;
+
+        hoursWorked=time-startTime;
+        int punchOut = (int) (hoursWorked+startTime);
+        return punchOut;
     }
 }

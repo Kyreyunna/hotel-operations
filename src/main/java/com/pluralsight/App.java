@@ -6,26 +6,28 @@ import java.time.LocalTime;
 public class App {
     public static void main(String[] args) {
         Room room = new Room(2, 124.00, false, false);
-        System.out.println(room.isAvailable());
+        System.out.println("is available: "+room.isAvailable());
 
         Reservation reservation = new Reservation("king", 3, true);
         System.out.printf("%6s","Reservation Total: $");
-        System.out.println(reservation.getReservationTotal());
+        System.out.println("reservation total: "+reservation.getReservationTotal());
 
         Employee employee1 = new Employee(40, 25.00, "J-10", "Jessica", "Clerk");
-        System.out.println(employee1.getRegularHours());
+        System.out.println("hours: "+employee1.getRegularHours());
 
         Employee employee2 = new Employee(20, 20.00, "J-10", "Jessica", "Clerk");
-        System.out.println(employee2.getTotalPay());
+        System.out.println("total pay: "+employee2.getTotalPay());
 
         Employee employee3 = new Employee(45, 20.00, "J-10", "Jessica", "Clerk");
-        System.out.println(employee3.getTotalPay());
+        System.out.println("total pay: "+employee3.getTotalPay());
 
-
-
-        Employee employee5;
-
-
+//      In main, punch in at
+//      10 and out at 14. hoursWorked goes up by 4
+        Employee employee4;
+        employee4 = new Employee(0);
+        System.out.println(employee4.punchIn(10));
+        employee4.getHoursWorked();
+        System.out.println(employee4.punchOut(14));
 
 
         Room room1;
