@@ -1,5 +1,7 @@
 package com.pluralsight;
 
+import java.time.LocalDateTime;
+
 public class App {
     public static void main(String[] args) {
         Room room = new Room(2, 124.00, false, false);
@@ -18,8 +20,8 @@ public class App {
         Employee employee3 = new Employee(45, 20.00, "J-10", "Jessica", "Clerk");
         System.out.println(employee3.getTotalPay());
 
-        Employee employee5 = new Employee(10, 14);
-        System.out.println(employee5.getHoursWorked());
+        //put local time
+        //check punch in and punch out hours worked btwn
 
         Room room1;
         room1 = new Room(false,false);
